@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pokeCard"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        app:cardBackgroundColor="#c5c7c9"
+        app:cardCornerRadius="30dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pokeID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                tools:text="ID" />
+
+            <TextView
+                android:id="@+id/pokeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="PokeName" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pokeImage"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:contentDescription="image"
+            android:src="@drawable/ic_baseline_android_24"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
